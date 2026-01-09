@@ -1,0 +1,2220 @@
+- role: generic
+  ref: ref-5hvbzrovslr
+  children:
+    - role: heading
+      name: 无障碍功能链接
+      ref: ref-umry0t34d2n
+    - role: generic
+      ref: ref-t6653pi3hh
+      children:
+        - role: generic
+          ref: ref-4b6j5j5jg9n
+          children:
+            - role: link
+              name: 跳到主要内容
+              ref: ref-yxmwr70pbc
+            - role: link
+              name: 无障碍功能帮助
+              ref: ref-0x33qksk453
+            - role: generic
+              ref: ref-oqsmkavt0jr
+              children:
+                - role: link
+                  name: 无障碍功能反馈
+                  ref: ref-4treat0uox7
+    - role: generic
+      ref: ref-71r52hiz67u
+      children:
+        - role: generic
+          ref: ref-zgvmmu6nfok
+          children:
+            - role: generic
+              ref: ref-o16yctkhba
+              children:
+                - role: generic
+                  ref: ref-ipp7j5te5h
+                  children:
+                    - role: search
+                      ref: ref-7fobafqt7t5
+                      children:
+                        - role: generic
+                          ref: ref-enbxdvgt9qi
+                          children:
+                            - role: generic
+                              ref: ref-qjftkggv6gc
+                              children:
+                                - role: generic
+                                  ref: ref-7cwvemzxawf
+                                  children:
+                                    - role: link
+                                      name: Google 首页
+                                      ref: ref-qpt0qo28gg
+                                - role: generic
+                                  ref: ref-knr9e4j4gw
+                                  children:
+                                    - role: link
+                                      ref: ref-wl8ybswhm88
+                                      children:
+                                        - role: img
+                                          name: 前往 Google 首页
+                                          ref: ref-lv1q1b85ya
+                                    - role: generic
+                                      ref: ref-izjvd3pjqi
+                                      children:
+                                        - role: generic
+                                          ref: ref-gy3ih4ogpr
+                                          children:
+                                            - role: combobox
+                                              name: 搜索
+                                              ref: ref-rv7cgg62t9g
+                                        - role: generic
+                                          ref: ref-f5k17zwr6m8
+                                          children:
+                                            - role: generic
+                                              ref: ref-t9972l0gt6r
+                                              children:
+                                                - role: button
+                                                  name: 清除
+                                                  ref: ref-uszuixykfsf
+                                            - role: generic
+                                              ref: ref-r3h0fnu23f
+                                              children:
+                                                - role: button
+                                                  name: 按语音搜索
+                                                  ref: ref-63j44s9jel
+                                                - role: button
+                                                  name: 按图搜索
+                                                  ref: ref-nwv5lphzy1
+                                    - role: button
+                                      name: 搜索
+                                      ref: ref-2tslwv0eqmo
+                                - role: generic
+                                  ref: ref-al165of1jz9
+                                  children:
+                                    - role: generic
+                                      ref: ref-h96wfycoja
+                                      children:
+                                        - role: dialog
+                                          name: 选择您要针对哪个元素提供反馈
+                                          ref: ref-kw1zfgrpxm
+                                          children:
+                                            - role: generic
+                                              ref: ref-wb9wlnqwz9
+                                              children:
+                                                - role: button
+                                                  name: 关闭“选择您要针对哪个元素提供反馈”
+                                                  ref: ref-gqyqz5ftbbk
+                                                - role: heading
+                                                  name: 选择您要针对哪个元素提供反馈
+                                                  ref: ref-6fhmxap7fpm
+                                        - role: generic
+                                          ref: ref-vw2j3zvmrfe
+                                          children:
+                                            - role: presentation
+                                              ref: ref-jton2d0tg0g
+                                              children:
+                                                - role: presentation
+                                                  ref: ref-7f7s2gonl7v
+                                            - role: presentation
+                                              ref: ref-3chg1x19lwa
+                                              children:
+                                                - role: listbox
+                                                  ref: ref-d0056zugcbs
+                                            - role: presentation
+                                              ref: ref-7a4jngebpwi
+                                            - role: presentation
+                                              name: 删除
+                                              ref: ref-h66w1m3yq3
+                                              children:
+                                                - role: generic
+                                                  ref: ref-pdim415i5bb
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-r61iue4u0o
+                                                      children:
+                                                        - role: option
+                                                          ref: ref-15vqbeqvid7
+                                                    - role: button
+                                                      name: 删除
+                                                      ref: ref-g41of0ytgvn
+                                                      children:
+                                                        - role: presentation
+                                                          ref: ref-sl1kir7lz57
+                                            - role: presentation
+                                              name: 查看更多
+                                              ref: ref-027yzpvm7epo
+                                              children:
+                                                - role: generic
+                                                  ref: ref-1yy9v79btht
+                                                  children:
+                                                    - role: presentation
+                                                      ref: ref-1120ru0u5sv
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-ro9t1g7ummb
+                                                          children:
+                                                            - role: option
+                                                              ref: ref-lgks63d22k
+                                                            - role: button
+                                                              name: 单词发音
+                                                              ref: ref-d59b6cpylnp
+                                                            - role: presentation
+                                                              ref: ref-chd0yu7d0lt
+                                                            - role: button
+                                                              name: 查看更多
+                                                              ref: ref-02tuc7oc647u
+                                            - role: option
+                                              ref: ref-qj5mcvj1v9
+                                              children:
+                                                - role: presentation
+                                                  ref: ref-o4nuytzbgo
+                                                  children:
+                                                    - role: presentation
+                                                      ref: ref-u5jcb7z4a5k
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-1xticf98rki
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-sds9sc05oi
+                                                              children:
+                                                                - role: option
+                                                                  ref: ref-q33uf0q1bc
+                                                                - role: button
+                                                                  name: 单词发音
+                                                                  ref: ref-qu4erpz3oc
+                                                            - role: generic
+                                                              ref: ref-3pjc7ugl969
+                                                              children:
+                                                                - role: option
+                                                                  ref: ref-wvjj2tdj3wh
+                                                                - role: button
+                                                                  name: 单词发音
+                                                                  ref: ref-eb3yo2fno4a
+                                                        - role: presentation
+                                                          ref: ref-6xayk9xdqf9
+                                            - role: presentation
+                                              name: 删除
+                                              ref: ref-i05884u8a4l
+                                              children:
+                                                - role: generic
+                                                  ref: ref-8ae2k052xji
+                                                  children:
+                                                    - role: button
+                                                      name: 删除
+                                                      ref: ref-kwl3wvc6lx
+                                                      children:
+                                                        - role: presentation
+                                                          ref: ref-wqft7oc87v
+                                            - role: presentation
+                                              ref: ref-vc4rr0lx9ro
+                                              children:
+                                                - role: generic
+                                                  ref: ref-tkvmjhry3b
+                                                  children:
+                                                    - role: option
+                                                      ref: ref-asm5asxt0kb
+                                                    - role: button
+                                                      name: 单词发音
+                                                      ref: ref-myk51xobzg
+                                                    - role: presentation
+                                                      ref: ref-fye6xkkzcn9
+                                                    - role: button
+                                                      name: 查看更多
+                                                      ref: ref-1zck9j6y1g6
+                                            - role: presentation
+                                              ref: ref-kqohttnl1xa
+                                              children:
+                                                - role: generic
+                                                  ref: ref-lybffi2pdb
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-l7fuv21uum
+                                                      children:
+                                                        - role: option
+                                                          ref: ref-7a5y24ax9w4
+                                                        - role: button
+                                                          name: 单词发音
+                                                          ref: ref-948sdsrev8c
+                                                    - role: generic
+                                                      ref: ref-gkbbusp0j3b
+                                                      children:
+                                                        - role: option
+                                                          ref: ref-1bhknu0ye2k
+                                                        - role: button
+                                                          name: 单词发音
+                                                          ref: ref-qdv0e7sqg5
+                                                - role: presentation
+                                                  ref: ref-9agc9oipd0d
+                                            - role: presentation
+                                              ref: ref-4wiw03cs33q
+                                              children:
+                                                - role: generic
+                                                  ref: ref-ychqbz2hk0k
+                                                  children:
+                                                    - role: presentation
+                                                      ref: ref-5igt3dc48gn
+                                                      children:
+                                                        - role: option
+                                                          ref: ref-w9xzw11ck7m
+                                        - role: generic
+                                          ref: ref-p951ejpw58j
+                                          children:
+                                            - role: button
+                                              name: 举报不当的联想查询
+                                              ref: ref-oq60s05wyz
+                        - role: generic
+                          ref: ref-s4rlyf1v3n7
+                          children:
+                            - role: textbox
+                              name: 1
+                              ref: ref-iaeezcx0dld
+                            - role: textbox
+                              name: b04cb06c25fa1fe2
+                              ref: ref-7dorgn52oxo
+                            - role: textbox
+                              name: fxFhaYakCb-n5OUPsOatqQ0
+                              ref: ref-0xr6h8jgvr7l
+                    - role: generic
+                      ref: ref-38bh1ys6sjy
+                      children:
+                        - role: generic
+                          ref: ref-4ylyx3tvn1r
+                          children:
+                            - role: button
+                              name: 设置
+                              ref: ref-pey9pms91so
+                        - role: generic
+                          ref: ref-ck89ebyh6sk
+                          children:
+                            - role: none
+                              ref: ref-tm6hbchu3wh
+                              children:
+                                - role: generic
+                                  ref: ref-rs8fxkeu7e
+                                  children:
+                                    - role: generic
+                                      ref: ref-8td1qagrxj5
+                                      children:
+                                        - role: button
+                                          name: Google 应用
+                                          ref: ref-29lgnl6z7um
+                                          children:
+                                            - role: img
+                                              ref: ref-48f1ty4l3za
+                                - role: generic
+                                  ref: ref-flpeqj90zzt
+                                  children:
+                                    - role: link
+                                      name: 登录
+                                      ref: ref-fhkrneg0pfs
+    - role: generic
+      ref: ref-etmwppdnqa6
+      children:
+        - role: generic
+          ref: ref-7wsz5n1g5ig
+          children:
+            - role: generic
+              ref: ref-sig4b5b7dcm
+              children:
+                - role: generic
+                  ref: ref-ewc5i1p19yp
+                  children:
+                    - role: generic
+                      ref: ref-gxefjsp2sqh
+                      children:
+                        - role: heading
+                          name: 过滤条件和主题
+                          ref: ref-i4ow662a9j
+                        - role: navigation
+                          ref: ref-o01fnlv68i
+                          children:
+                            - role: generic
+                              ref: ref-jv63ihz6nuo
+                              children:
+                                - role: generic
+                                  ref: ref-iy25pnbzroc
+                                  children:
+                                    - role: generic
+                                      ref: ref-inlklviu86m
+                                      children:
+                                        - role: generic
+                                          ref: ref-55d0ktkllj9
+                                          children:
+                                            - role: list
+                                              ref: ref-evlm25t2sbb
+                                              children:
+                                                - role: listitem
+                                                  ref: ref-g0vj2zrw7ta
+                                                  children:
+                                                    - role: link
+                                                      name: 全部
+                                                      ref: ref-9r0k5ug8nof
+                                                - role: listitem
+                                                  ref: ref-p1l6drkphvn
+                                                  children:
+                                                    - role: link
+                                                      name: 新闻
+                                                      ref: ref-5222319kg3s
+                                                - role: listitem
+                                                  ref: ref-ru78eszko6
+                                                  children:
+                                                    - role: link
+                                                      name: 图片
+                                                      ref: ref-gtgvqtdeoym
+                                                - role: listitem
+                                                  ref: ref-m8flnfkyt2k
+                                                  children:
+                                                    - role: link
+                                                      name: 视频
+                                                      ref: ref-sqy1u7tyqtq
+                                                - role: listitem
+                                                  ref: ref-ugfuemf4pc
+                                                  children:
+                                                    - role: link
+                                                      name: 短视频
+                                                      ref: ref-4cx1z9kjal8
+                                                - role: listitem
+                                                  ref: ref-amt1o50ukbe
+                                                  children:
+                                                    - role: link
+                                                      name: 网页
+                                                      ref: ref-t66lsx7cll
+                                                - role: listitem
+                                                  ref: ref-6t2mqvaqwyc
+                                                  children:
+                                                    - role: link
+                                                      name: 图书
+                                                      ref: ref-p3xkjftwrq7
+                                                - role: listitem
+                                                  ref: ref-95u735mrm6
+                                                  children:
+                                                    - role: button
+                                                      name: 更多
+                                                      ref: ref-qkaqws8z9a
+                                                      children:
+                                                        - role: generic
+                                                          name: 更多过滤条件
+                                                          ref: ref-hscyc28laa
+                                                    - role: generic
+                                                      ref: ref-jphlcaav6z8
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-zci3uzkhbtk
+                                                          children:
+                                                            - role: none
+                                                              ref: ref-nfsb5eyqj8c
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-ku7x6bjoap9
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-2z5lgoaocn9
+                                                                      children:
+                                                                        - role: listitem
+                                                                          ref: ref-c4xj8rhj894
+                                                                          children:
+                                                                            - role: link
+                                                                              name: 财经
+                                                                              ref: ref-0ldb3br91kf
+                                            - role: generic
+                                              ref: ref-xc0h1jl9fzc
+                                              children:
+                                                - role: button
+                                                  name: 工具
+                                                  ref: ref-jvptnuw2xo
+                                - role: generic
+                                  ref: ref-wijcihklpzi
+                                - role: generic
+                                  ref: ref-xnxtfhm5w5s
+            - role: presentation
+              ref: ref-r6uxdslycj
+              children:
+                - role: generic
+                  ref: ref-q9w95qgtms8
+                  children:
+                    - role: generic
+                      ref: ref-p4v27y8kge8
+                      children:
+                        - role: generic
+                          ref: ref-0iqa6r2gkn6
+                          children:
+                            - role: button
+                              ref: ref-1l4t24rtokyi
+                            - role: generic
+                              ref: ref-k15zurqop0s
+                              children:
+                                - role: generic
+                                  ref: ref-6h5ic8v5k7l
+                                  children:
+                                    - role: generic
+                                      ref: ref-efu40jfzbff
+                                      children:
+                                        - role: generic
+                                          ref: ref-zsm75e6qgk
+                                          children:
+                                            - role: generic
+                                              ref: ref-bksmssiuftd
+                                              children:
+                                                - role: button
+                                                  name: 时间不限
+                                                  ref: ref-o3kwkmutqd
+                                            - role: generic
+                                              ref: ref-tudoabr2vqi
+                                              children:
+                                                - role: generic
+                                                  ref: ref-57s8cyte1j8
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-gpdicq3xcd
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-w1brsdpq1p
+                                                          children:
+                                                            - role: link
+                                                              name: 时间不限
+                                                              ref: ref-pd04l7l81n
+                                                    - role: generic
+                                                      ref: ref-9chi2gux7u
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-ueodr8wanz
+                                                          children:
+                                                            - role: link
+                                                              name: 过去 1 小时内
+                                                              ref: ref-pcnwi3n20d
+                                                    - role: generic
+                                                      ref: ref-0f3ey8fja1p6
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-bk8stc2i7mp
+                                                          children:
+                                                            - role: link
+                                                              name: 过去 24 小时内
+                                                              ref: ref-4g9lbt6tewa
+                                                    - role: generic
+                                                      ref: ref-2xxzxjnxqw3
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-zu7f4f5dbci
+                                                          children:
+                                                            - role: link
+                                                              name: 过去 1 周内
+                                                              ref: ref-vjiv1adl5f
+                                                    - role: generic
+                                                      ref: ref-s38k4hnc0bh
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-7vpuxz3rzoj
+                                                          children:
+                                                            - role: link
+                                                              name: 过去 1 个月内
+                                                              ref: ref-0xlbwbsfiaz
+                                                    - role: generic
+                                                      ref: ref-n36phm912r
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-yxiwmq5lwnn
+                                                          children:
+                                                            - role: link
+                                                              name: 过去 1 年内
+                                                              ref: ref-1mdztewa02r
+                                                    - role: button
+                                                      name: 自定日期范围...
+                                                      ref: ref-e5la79y1lgc
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-rcxl1fxr11
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-wy0t3oonud
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-kwpilpi059m
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-wkkaotumfw
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-74579jeqj77
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-yw4g5a5ivx
+                                                                              children:
+                                                                                - role: dialog
+                                                                                  ref: ref-0cghkf3dfmoh
+                                    - role: generic
+                                      ref: ref-hn8en74wikm
+                                      children:
+                                        - role: generic
+                                          ref: ref-5iks4uvtf34
+                                          children:
+                                            - role: generic
+                                              ref: ref-ubptpdukvqf
+                                              children:
+                                                - role: button
+                                                  name: 所有结果
+                                                  ref: ref-qn4w99bqorc
+                                            - role: generic
+                                              ref: ref-duw6ur72nhj
+                                              children:
+                                                - role: generic
+                                                  ref: ref-t7yda8z0urc
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-dnlpcl19t87
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-umj43dl9r9q
+                                                          children:
+                                                            - role: link
+                                                              name: 所有结果
+                                                              ref: ref-a821dx1wjbe
+                                                    - role: generic
+                                                      ref: ref-h329uaoky5f
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-37gnvi5ddj7
+                                                          children:
+                                                            - role: link
+                                                              name: 精确匹配
+                                                              ref: ref-ln3o87hsyus
+                                    - role: generic
+                                      ref: ref-kqjuoe6k68l
+                                      children:
+                                        - role: link
+                                          name: 高级搜索
+                                          ref: ref-1adhsg9r6k8
+            - role: presentation
+              ref: ref-474i7jx3fwv
+              children:
+                - role: generic
+                  ref: ref-hxb6ybhuk09
+                  children:
+                    - role: generic
+                      ref: ref-dls0bo1b4a7
+                      children:
+                        - role: generic
+                          ref: ref-rcm8tf2kprn
+                          children:
+                            - role: progressbar
+                              ref: ref-r7yei8iyb2
+            - role: generic
+              ref: ref-qmv95j72tb9
+              children:
+                - role: generic
+                  ref: ref-k1tvib3y77i
+                  children:
+                    - role: generic
+                      ref: ref-o9590yn8nqp
+                      children:
+                        - role: generic
+                          ref: ref-gkbgx9f8wy7
+                          children:
+                            - role: generic
+                              ref: ref-61vb97wmt7n
+                              children:
+                                - role: generic
+                                  ref: ref-zasup24zdjh
+                                  children:
+                                    - role: dialog
+                                      name: 选择您要针对哪个元素提供反馈
+                                      ref: ref-jsk5fvyev98
+                                      children:
+                                        - role: generic
+                                          ref: ref-u7fl22cxov8
+                                          children:
+                                            - role: button
+                                              name: 关闭“选择您要针对哪个元素提供反馈”
+                                              ref: ref-q3ihowau3a
+                                            - role: heading
+                                              name: 选择您要针对哪个元素提供反馈
+                                              ref: ref-io3g070cvhl
+                                            - role: heading
+                                              name: 您也可以 提供总体情况反馈
+                                              ref: ref-oxapbbshebk
+                                              children:
+                                                - role: button
+                                                  name: 提供总体情况反馈
+                                                  ref: ref-7s8j15vs87l
+                                    - role: generic
+                                      ref: ref-zxsio1sfgjk
+                                      children:
+                                        - role: generic
+                                          ref: ref-tg3t7g5p3z
+                                          children:
+                                            - role: generic
+                                              ref: ref-dr48sfjy9wi
+                                              children:
+                                                - role: generic
+                                                  ref: ref-538hr9eelh9
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-8fr1hw3mso6
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-j7i8phlm5v
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-vzgzt3bfljm
+                                                              children:
+                                                                - role: heading
+                                                                  name: 阿里·哈米尼
+                                                                  ref: ref-opzkh2b77wg
+                                                        - role: generic
+                                                          ref: ref-soh93yhj65p
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-eb719zfebv6
+                                                              children:
+                                                                - role: heading
+                                                                  name: 伊朗最高领袖
+                                                                  ref: ref-kvxak06rlb
+                                                            - role: generic
+                                                              ref: ref-ixyw5b7jg
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-p5eyzx71ldg
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-ng2tbssbevf
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-mly3b6hs3v
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-a4xmp1wdnl
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-v4iibuks3no
+                                        - role: generic
+                                          ref: ref-cfvhfiytblm
+                                          children:
+                                            - role: generic
+                                              ref: ref-0ab8s24bcuiq
+                                              children:
+                                                - role: generic
+                                                  ref: ref-d3bf562ycy
+                                                  children:
+                                                    - role: tablist
+                                                      ref: ref-eozma5o18iw
+                                                      children:
+                                                        - role: tab
+                                                          name: 概览
+                                                          ref: ref-utocty7gkg
+                                                        - role: tab
+                                                          name: 图书
+                                                          ref: ref-053o73dciqnn
+                - role: generic
+                  ref: ref-vs75r2gc53c
+                  children:
+                    - role: heading
+                      name: 搜索结果
+                      ref: ref-kyids593lcb
+                    - role: generic
+                      ref: ref-te49t85fmss
+                      children:
+                        - role: generic
+                          ref: ref-wiw799ey73h
+                          children:
+                            - role: generic
+                              ref: ref-w33i7b33gj
+                              children:
+                                - role: generic
+                                  ref: ref-90ty2grrdr7
+                                  children:
+                                    - role: generic
+                                      ref: ref-uglz1kv5pk
+                                      children:
+                                        - role: generic
+                                          ref: ref-atygdm97zu
+                                          children:
+                                            - role: generic
+                                              ref: ref-3beku7n931e
+                                              children:
+                                                - role: generic
+                                                  ref: ref-iumyyg5jfr9
+                                                  children:
+                                                    - role: complementary
+                                                      name: 精选搜索结果
+                                                      ref: ref-6q7el5k2tgp
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-749p48btuj4
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-7xcsc9n00e4
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-mvq0l97n8w
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-bodtn7tr93
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-hnbxsireh3k
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-dlx16rjjimv
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-15yuk9nl15u
+                                                                - role: generic
+                                                                  ref: ref-oa7i7icyay
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-bd6vixruffo
+                                                                      children:
+                                                                        - role: link
+                                                                          ref: ref-ipwbdsseud
+                                                                - role: generic
+                                                                  ref: ref-rtgvhkakz0d
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-mbk8yp6sfdg
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-ndi790oko1
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-vmraxabryyb
+                                                                              children:
+                                                                                - role: link
+                                                                                  name: 年龄 86岁 1939年4月19日
+                                                                                  ref: ref-u0pr87aervn
+                                                                - role: generic
+                                                                  ref: ref-5n7juzfaka
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-76tvp7u9ytp
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-qsw4qnbd0t
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-t0vszlkpiyb
+                                                                              children:
+                                                                                - role: button
+                                                                                  name: 子女
+                                                                                  ref: ref-emxw2bu1aq
+                                                                                - role: generic
+                                                                                  ref: ref-g39caaazmr5
+                                                                - role: generic
+                                                                  ref: ref-25q4twnpqrw
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-jfrbnf5i7m8
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-k4l0corwc5t
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-031h1rwvsjb9
+                                                                              children:
+                                                                                - role: link
+                                                                                  name: 国籍 伊朗
+                                                                                  ref: ref-egs4tn72sl
+                                                                - role: generic
+                                                                  ref: ref-xst5k9d3qf
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-wg0d01ekusb
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-gh1cqk9uuy
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-6v2r33ucbdf
+                                                                              children:
+                                                                                - role: link
+                                                                                  name: 目前职务 伊朗最高領袖
+                                                                                  ref: ref-qkigctq4irm
+                - role: main
+                  ref: ref-2s9ia7v53qu
+                  children:
+                    - role: generic
+                      ref: ref-0a2sv8dz1f0h
+                      children:
+                        - role: generic
+                          ref: ref-upnyxttfpe
+                          children:
+                            - role: generic
+                              ref: ref-tpt66fyy28c
+                              children:
+                                - role: generic
+                                  ref: ref-l5n0fmm5hfs
+                                  children:
+                                    - role: generic
+                                      ref: ref-pdc28i8jiac
+                                      children:
+                                        - role: generic
+                                          ref: ref-iw49h5uukxk
+                                          children:
+                                            - role: generic
+                                              ref: ref-f9kled9amgp
+                                              children:
+                                                - role: generic
+                                                  ref: ref-ltofc5gy19
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-jts41sxz28
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-0cst4kramjbe
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-nsjmv8827d
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-o78pboz1fgb
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "阿里·哈梅内伊- 维基百科，自由的百科全书 维基百科 http ://zh.wikipedia.org › zh-han  › 阿里·哈梅內伊"
+                                                                      ref: ref-b61oc9smjlt
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 阿里·哈梅内伊- 维基百科，自由的百科全书
+                                                                          ref: ref-sg5fgnh429
+                                                                        - role: generic
+                                                                          ref: ref-9xaf0gpvftt
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-l2pnng8qne
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-24eonr2c3ub
+                                                                - role: generic
+                                                                  ref: ref-rb6ft5qogn
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-aujtz99vlb6
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-rcfzg7iinp
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-iu6lq7vj1us
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-b34jtkwxdqp
+                                                                    - role: generic
+                                                                      ref: ref-zebjjr0nl7
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-ql8i0xhjfv9
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-hbyx4ffgkut
+                                                    - role: generic
+                                                      ref: ref-vj982dvwjdf
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-0zegvcufdrf
+                                                          children:
+                                                            - role: link
+                                                              ref: ref-rguinmdle6
+                                                    - role: generic
+                                                      ref: ref-w7nawxtbmo8
+                                                      children:
+                                                        - role: list
+                                                          ref: ref-v667pi2fau
+                                                          children:
+                                                            - role: listitem
+                                                              name: 个人生活
+                                                              ref: ref-h2soim9qqxd
+                                                              children:
+                                                                - role: link
+                                                                  name: 个人生活
+                                                                  ref: ref-ipzw86hs40j
+                                                            - role: listitem
+                                                              name: 政治生涯及总统任内
+                                                              ref: ref-giva1lipc4n
+                                                              children:
+                                                                - role: link
+                                                                  name: 政治生涯及总统任内
+                                                                  ref: ref-ziqpkzj63ye
+                                                            - role: listitem
+                                                              name: 出任最高领袖
+                                                              ref: ref-07ivaz2uq4z7
+                                                              children:
+                                                                - role: link
+                                                                  name: 出任最高领袖
+                                                                  ref: ref-t5cx47zdzki
+                                                            - role: listitem
+                                                              name: 国内政策
+                                                              ref: ref-1gk46hd0b42
+                                                              children:
+                                                                - role: link
+                                                                  name: 国内政策
+                                                                  ref: ref-apd7epuwj2q
+                                    - role: generic
+                                      ref: ref-izj7w41x2d
+                                      children:
+                                        - role: generic
+                                          ref: ref-291ims3i49m
+                                          children:
+                                            - role: generic
+                                              ref: ref-lid2wudh4i9
+                                              children:
+                                                - role: generic
+                                                  ref: ref-xts5hysjmm
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-ehxg4paa7wi
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-c5oqj4eznr
+                                                          children:
+                                                            - role: heading
+                                                              name: 焦点新闻
+                                                              ref: ref-x1p4l3ew7r
+                                                    - role: generic
+                                                      ref: ref-6hucqadu3t
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-4l7f9kplfnb
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-gbthxeqjn6f
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-j356s6ooxas
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-q7kean8i7rg
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 观察者 哈梅内伊放话：特朗普会被推翻-观察者网 3小时前
+                                                                          ref: ref-of4hcqydgbe
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-qhc41wpwgfd
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-9nikn25qjls
+                                                                - role: generic
+                                                                  ref: ref-1cxqx6odhv6
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-qzg06ekp7g
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-0bagg0625r3
+                                                                          children:
+                                                                            - role: link
+                                                                              name: 每日经济新闻 哈梅内伊发表讲话，呼吁伊朗人民团结！伊朗外长：美以是伊朗动乱幕后黑手！迪拜机场多趟飞往伊朗航班被取消 21分钟前
+                                                                              ref: ref-hqjgq53d25p
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-zymhw548rge
+                                                                    - role: generic
+                                                                      ref: ref-kwn8do0gpq8
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-rxge8kvkxi
+                                                                          children:
+                                                                            - role: link
+                                                                              name: 川观新闻 哈梅内伊呼吁伊朗人民保持团结 4小时前
+                                                                              ref: ref-ykamybg33ys
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-3fnekreg0gu
+                                                            - role: generic
+                                                              ref: ref-edswzw4raou
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-05kx99w55mgy
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-r35py5cadej
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 凤凰网 哈梅内伊：一些骚乱分子想通过破坏取悦另一个国家的总统 5小时前
+                                                                          ref: ref-24cdjzmpq0x
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-jz0xvea5ai
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-7nhmmu8boer
+                                                                - role: generic
+                                                                  ref: ref-uy3b6f5c4xs
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-fh61j4vvb9q
+                                                                      children:
+                                                                        - role: link
+                                                                          name: Sohu 哈梅内伊喊话特朗普 35分钟前
+                                                                          ref: ref-z6xmkisnsd
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-m91lbf6hmxh
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-64bbwi19i2e
+                                                    - role: generic
+                                                      ref: ref-8nifga3s3zx
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-7zzl74a5kkm
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-a2nnrb23igv
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-4soup6c387d
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-802s5w4k41m
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 其他相关新闻报道
+                                                                          ref: ref-fua9hgkzzsa
+                                                        - role: generic
+                                                          ref: ref-5d8xyo131lp
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-begxegw79nl
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-n3we6d3ivrj
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-0d171luiiso6
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 新浪财经 哈梅内伊：伊朗不会退缩，敦促美国专注解决自身问题 3小时前
+                                                                          ref: ref-x8i6f8x1kcm
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-4j6eolx7bkv
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-dlx39hphosk
+                                                                - role: generic
+                                                                  ref: ref-9ukmht6h8hs
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-2plbw8o1gz
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 网易 伊朗自顾不暇，以色列对真主党开火！哈梅内伊发表讲话，点名美以 1小时前
+                                                                          ref: ref-2zcirhrvxgh
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-n0ed82bwvx
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-x421c3up7cj
+                                                    - role: generic
+                                                      ref: ref-3wjew84hcb
+                                                      children:
+                                                        - role: link
+                                                          name: 更多新闻
+                                                          ref: ref-0ka51cjubspk
+                                    - role: generic
+                                      ref: ref-hfrni5roaid
+                                      children:
+                                        - role: generic
+                                          ref: ref-iss22daj6c8
+                                          children:
+                                            - role: generic
+                                              ref: ref-z35hl3e8ke
+                                              children:
+                                                - role: generic
+                                                  ref: ref-vqkz9oe38f9
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-cjrklydx5ib
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-civtugyfw6a
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-dijp2p3cvfk
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-cqc31fv5sp
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "伊朗大规模抗议持续首都德黑兰等地民众上街 BBC http ://www.bbc.com › zhongwen › article  ›  imp"
+                                                                      ref: ref-rsv8e92wvcf
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 伊朗大规模抗议持续首都德黑兰等地民众上街
+                                                                          ref: ref-uj8gmyo4gz
+                                                                        - role: generic
+                                                                          ref: ref-glh0mjeoyhk
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-gt6qm59vgqn
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-k55gp8kgp
+                                                                - role: generic
+                                                                  ref: ref-4i1wna5oe6
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-h5ts28jdovq
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-n13aaung2pf
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-4ktgbb2adtn
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-3ymn0bx4obt
+                                                                    - role: generic
+                                                                      ref: ref-veqt7www7sj
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-15bfr5dry73
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-5u6v8oclk4
+                                    - role: generic
+                                      ref: ref-ih096qer4t
+                                      children:
+                                        - role: generic
+                                          ref: ref-0vlcik0m8ka
+                                          children:
+                                            - role: generic
+                                              ref: ref-mjr0l5qxwcc
+                                              children:
+                                                - role: generic
+                                                  ref: ref-vvf52jyxs1
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-ba0uie1cdpi
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-nr0r88z4zo
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-3o7c81g4xpk
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-w5e8gqyreo
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "阿亚图拉·赛义德·阿里·哈梅内伊 百度百科 http ://baike.baidu.com › item › 阿亚图拉·赛义德·阿里..."
+                                                                      ref: ref-ws9bmwxmbp
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 阿亚图拉·赛义德·阿里·哈梅内伊
+                                                                          ref: ref-an9nadr3psu
+                                                                        - role: generic
+                                                                          ref: ref-jpziue5z9h
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-noy19fjdi
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-jwxe33hqs5n
+                                                                - role: generic
+                                                                  ref: ref-9f89qpsmr4o
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-jygt20q5fbp
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-z1i7metcq0a
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-col6n7x6bkh
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-c5q5ffskyf
+                                                                    - role: generic
+                                                                      ref: ref-ud12a7zkjuc
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-bzs8bfh0ba
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-czaxn8b9t37
+                                    - role: generic
+                                      ref: ref-iq11k1ksbxr
+                                      children:
+                                        - role: generic
+                                          ref: ref-z2t8wwdpnc
+                                          children:
+                                            - role: generic
+                                              ref: ref-tolgxn9lq08
+                                              children:
+                                                - role: generic
+                                                  ref: ref-uwv5huge88
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-o4m204dxm0q
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-bvl61ndbsov
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-o044rn25w
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-m2tcok046pc
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "哈梅内伊呼吁伊朗人民保持团结 新华网 http://www.new .cn › ..."
+                                                                      ref: ref-ffwwnzadesg
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 哈梅内伊呼吁伊朗人民保持团结
+                                                                          ref: ref-nx54tsja1ii
+                                                                        - role: generic
+                                                                          ref: ref-1g3gplopdrt
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-jhk2x4tbz0b
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-9qcigu1t45s
+                                                                - role: generic
+                                                                  ref: ref-y0pz249zcd
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-aibiedpqju
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-o29b8wy69u
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-rxjo9l7djf
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-qpsoujssyrm
+                                                                    - role: generic
+                                                                      ref: ref-a8qxuluce9q
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-lm9ywwykx9
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-mb6v3x71hug
+                                    - role: generic
+                                      ref: ref-5shjsdh7yyf
+                                      children:
+                                        - role: generic
+                                          ref: ref-g0cz1c9vsrh
+                                          children:
+                                            - role: generic
+                                              ref: ref-oo4ie39jqi
+                                              children:
+                                                - role: generic
+                                                  ref: ref-c347xjw8gft
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-6gzdbmwpxrb
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-v0n9d3w0d2
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-dyipnt5ts1w
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-htrsuigkov9
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "哈梅内伊：伊朗不会退缩，敦促美国专注解决自身问题 中国新闻网 http ://www.chinanew .com.cn › ..."
+                                                                      ref: ref-x0kt668d69l
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 哈梅内伊：伊朗不会退缩，敦促美国专注解决自身问题
+                                                                          ref: ref-t70okq9mpdn
+                                                                        - role: generic
+                                                                          ref: ref-v4e4wj21ug
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-99lxiea9qsc
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-tzd2l4uceqf
+                                                                - role: generic
+                                                                  ref: ref-wgnnrk8fqf
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-70xfpqfsbrb
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-s0rejpw45bj
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-rx9xh7abcp8
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-ng81k0ewpra
+                                                                    - role: generic
+                                                                      ref: ref-rt9fi34f0c
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-smkajaj5m2o
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-o45vcikhl7n
+                                    - role: generic
+                                      ref: ref-2l9a08zlz5z
+                                      children:
+                                        - role: generic
+                                          ref: ref-r1lo1azw9mo
+                                          children:
+                                            - role: generic
+                                              ref: ref-mqe7reo6ncn
+                                              children:
+                                                - role: generic
+                                                  ref: ref-1ogvveaw07g
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-rpft9svwxir
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-1dhmhuqrap4
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-ubd0w92dnze
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-m96xz5hp3s
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "美军抓捕马杜罗：向德黑兰鸣枪示警 DW http ://www.dw.com › 美军抓捕马杜罗向德黑兰鸣枪..."
+                                                                      ref: ref-lmhvigxn4kd
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 美军抓捕马杜罗：向德黑兰鸣枪示警
+                                                                          ref: ref-wx4jbg3z4gs
+                                                                        - role: generic
+                                                                          ref: ref-bb04k18iw2
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-bfc1fy5fl54
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-5pkrbvgjilr
+                                                                - role: generic
+                                                                  ref: ref-rli2ktmwae
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-feqekji8d0p
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-3j18fea6ah4
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-y14cp502bp
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-ap7de66utik
+                                                                    - role: generic
+                                                                      ref: ref-opexp3o6wgn
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-mhu1nlcjtk
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-zuoll8jlhpl
+                                    - role: generic
+                                      ref: ref-9r4zhws0h4e
+                                      children:
+                                        - role: generic
+                                          ref: ref-vemzrk7c9q
+                                          children:
+                                            - role: generic
+                                              ref: ref-z2jrzcljgki
+                                              children:
+                                                - role: generic
+                                                  ref: ref-vq0sa53aac
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-21a7c65tq1c
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-dcdxc023mga
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-fgwu3ppfevf
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-f596aag5ucw
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "哈梅内伊发表讲话，呼吁伊朗人民团结！伊朗外长：美以是 ... 每日经济新闻 http ://www.nbd.com.cn › article"
+                                                                      ref: ref-eog6qhex0g5
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 哈梅内伊发表讲话，呼吁伊朗人民团结！伊朗外长：美以是 ...
+                                                                          ref: ref-naivtpgf0w
+                                                                        - role: generic
+                                                                          ref: ref-h7aol4u25jp
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-3hmckuimq1j
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-7acsk0czbv6
+                                                                - role: generic
+                                                                  ref: ref-vgakp3eh29
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-5lt9crih6is
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-cp42auxhzeq
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-l84uc9zd7hs
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-bni0ip5224d
+                                                                    - role: generic
+                                                                      ref: ref-o1e8gjq39n
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-y9bgsaf8xb
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-ybfelfu9rh
+                                    - role: generic
+                                      ref: ref-pybs2y6cqjo
+                                      children:
+                                        - role: generic
+                                          ref: ref-acvhug64qr
+                                          children:
+                                            - role: generic
+                                              ref: ref-lfd27e3h5i
+                                              children:
+                                                - role: generic
+                                                  ref: ref-0z7ffhg92oo
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-8hgh0u9g2zu
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-nz67mwu0anb
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-9r4hewjfxye
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-7331mycmtih
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "哈梅内伊：一些骚乱分子想通过破坏取悦另一个国家的总统 凤凰网 http ://new .ifeng.com › ..."
+                                                                      ref: ref-hnhj48ltae
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 哈梅内伊：一些骚乱分子想通过破坏取悦另一个国家的总统
+                                                                          ref: ref-b294jf5r2z
+                                                                        - role: generic
+                                                                          ref: ref-r3m12ipdhr
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-txr0ndvvz3e
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-cmwae9mrae5
+                                                                - role: generic
+                                                                  ref: ref-cf4t7uzmwzj
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-0tfm01rx90hs
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-fe5hgi74b9
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-e3o6hknsbmw
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-ede1dbwv8pg
+                                                                    - role: generic
+                                                                      ref: ref-psv23421ron
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-jt8r8ofmzoq
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-47gstztwyzz
+                                    - role: generic
+                                      ref: ref-fkcr32pjb2o
+                                      children:
+                                        - role: generic
+                                          ref: ref-8njfnc2zm1g
+                                          children:
+                                            - role: generic
+                                              ref: ref-vg4qdmj7q9
+                                              children:
+                                                - role: generic
+                                                  ref: ref-u3n4ty67qy
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-jf3ostv9z4c
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-fgy458bslel
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-w5e2si49qu9
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-3wc0n5rmfvo
+                                                                  children:
+                                                                    - role: link
+                                                                      name: "哈梅内伊强硬表态：伊朗绝不屈服于美国压力 联合早报 http ://www.zaobao.com. g ›  tory20260104-8051204"
+                                                                      ref: ref-xdpuedp189
+                                                                      children:
+                                                                        - role: heading
+                                                                          name: 哈梅内伊强硬表态：伊朗绝不屈服于美国压力
+                                                                          ref: ref-3rs1uubrxdd
+                                                                        - role: generic
+                                                                          ref: ref-2e0t4eddvjp
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-k03nw9pttia
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-mr76hvb8urp
+                                                                - role: generic
+                                                                  ref: ref-lw7oaloq9a
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-jdkseq9vljh
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-le3tle279ec
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-ehtonpjpq6a
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-1u6rjd4x2sm
+                                                                    - role: generic
+                                                                      ref: ref-g269cob6gw
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-af7l3iorhfg
+                                                                          children:
+                                                                            - role: button
+                                                                              name: 关于这条结果的详细信息
+                                                                              ref: ref-fkgap3oojnb
+                    - role: generic
+                      ref: ref-mjf76ktqjln
+                      children:
+                        - role: generic
+                          ref: ref-2tm73uhuj8l
+                          children:
+                            - role: none
+                              ref: ref-go3vjohiq5j
+                            - role: generic
+                              ref: ref-7a9jmgn1jqc
+                              children:
+                                - role: generic
+                                  ref: ref-zupblrco8u
+                                  children:
+                                    - role: generic
+                                      ref: ref-l7ut7z6c9gb
+                                      children:
+                                        - role: generic
+                                          ref: ref-ola5zx21ccs
+                                          children:
+                                            - role: generic
+                                              ref: ref-dnfx0vwmmkv
+                                              children:
+                                                - role: generic
+                                                  ref: ref-9d5wr3ok3t
+                                                  children:
+                                                    - role: heading
+                                                      name: 用户还搜索了
+                                                      ref: ref-hn3r82mett9
+                                                - role: generic
+                                                  ref: ref-h8zodh4g59r
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-5ntn66ill6f
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-lcrqhjzh95
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-ai8tvswmukc
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-t3mtkkrsj4j
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-7mix0re2asc
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊多少个老婆
+                                                                          ref: ref-xvakvs4iuyo
+                                                            - role: generic
+                                                              ref: ref-2h9sgjjmoz
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-eeh268ws23j
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-indx6aynppl
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊习近平
+                                                                          ref: ref-rtun9jfguze
+                                                            - role: generic
+                                                              ref: ref-q4vtie5yjd
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-mnmcl76w2cg
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-tdt16k326zh
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊的老婆
+                                                                          ref: ref-8j0y8zirmc5
+                                                            - role: generic
+                                                              ref: ref-pefl4ea4za
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-o9stacigll9
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-a2p7fz8zwi5
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊现状
+                                                                          ref: ref-kpkmx3xak59
+                                                        - role: generic
+                                                          ref: ref-99ip149l83
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-2op0oyc21mi
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-1vp311mt1pc
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-507kgsww6wt
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊逃亡
+                                                                          ref: ref-4my1fuh945n
+                                                            - role: generic
+                                                              ref: ref-pbjxzk0uw7c
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-m7mj0xneeyq
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-hbmikujynjg
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊的儿子
+                                                                          ref: ref-guayd5slan5
+                                                            - role: generic
+                                                              ref: ref-vpjilyrh4rt
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-7k4ji2xlyf8
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-r1ti2qeqyz
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊前任
+                                                                          ref: ref-6mgqxwzqp46
+                                                            - role: generic
+                                                              ref: ref-vz17wp8o8yl
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-7mh9lyzt17g
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-g4ya4iirwy
+                                                                      children:
+                                                                        - role: link
+                                                                          name: 哈梅内伊6岁老婆
+                                                                          ref: ref-2yhqizkr1s2
+                            - role: navigation
+                              ref: ref-6ipdxktimv9
+                              children:
+                                - role: heading
+                                  name: 网页导航
+                                  ref: ref-ha2hy4epdz5
+                                - role: presentation
+                                  ref: ref-aoxevo3l7l
+                                  children:
+                                    - role: generic
+                                      ref: ref-zilrqbeqix
+                                      children:
+                                        - role: row
+                                          name: 1 2 3 4 5 6 7 8 9 10 下一页
+                                          ref: ref-7hak4yzkf96
+                                          children:
+                                            - role: cell
+                                              ref: ref-fz5r9rwz8
+                                            - role: cell
+                                              name: 1
+                                              ref: ref-ip9wp1py2c
+                                            - role: cell
+                                              name: 2
+                                              ref: ref-as74s9vef0a
+                                              children:
+                                                - role: link
+                                                  name: Page 2
+                                                  ref: ref-5zepg206ce2
+                                            - role: cell
+                                              name: 3
+                                              ref: ref-3jw1n1ojssn
+                                              children:
+                                                - role: link
+                                                  name: Page 3
+                                                  ref: ref-0p1tgkexfzv
+                                            - role: cell
+                                              name: 4
+                                              ref: ref-vtnwg6j114
+                                              children:
+                                                - role: link
+                                                  name: Page 4
+                                                  ref: ref-u8ic56id4oj
+                                            - role: cell
+                                              name: 5
+                                              ref: ref-slfurdyn8n
+                                              children:
+                                                - role: link
+                                                  name: Page 5
+                                                  ref: ref-tdimrhdq5m
+                                            - role: cell
+                                              name: 6
+                                              ref: ref-bbt3ypkskud
+                                              children:
+                                                - role: link
+                                                  name: Page 6
+                                                  ref: ref-882biegq1u
+                                            - role: cell
+                                              name: 7
+                                              ref: ref-z8gpnvcrbsm
+                                              children:
+                                                - role: link
+                                                  name: Page 7
+                                                  ref: ref-18a02txpgxpi
+                                            - role: cell
+                                              name: 8
+                                              ref: ref-vvdkke508p
+                                              children:
+                                                - role: link
+                                                  name: Page 8
+                                                  ref: ref-45sz612j0mj
+                                            - role: cell
+                                              name: 9
+                                              ref: ref-ng4cqu6zr4
+                                              children:
+                                                - role: link
+                                                  name: Page 9
+                                                  ref: ref-u928zxk6ple
+                                            - role: cell
+                                              name: 10
+                                              ref: ref-1ryke1iwmsg
+                                              children:
+                                                - role: link
+                                                  name: Page 10
+                                                  ref: ref-qvxhxhcyolm
+                                            - role: heading
+                                              name: 下一页
+                                              ref: ref-1uiwe217xt9
+                                              children:
+                                                - role: link
+                                                  name: 下一页
+                                                  ref: ref-tynu6wd0agp
+                    - role: navigation
+                      ref: ref-25hxulfjgws
+                - role: generic
+                  ref: ref-kfya0qxyek
+                  children:
+                    - role: generic
+                      ref: ref-k8p6rwd525
+                      children:
+                        - role: generic
+                          ref: ref-pwh65p2vxqf
+                          children:
+                            - role: generic
+                              ref: ref-af6vxc8jpf
+                              children:
+                                - role: generic
+                                  ref: ref-pdulutdoy4b
+                                  children:
+                                    - role: generic
+                                      ref: ref-1scl1ttroi1
+                                      children:
+                                        - role: generic
+                                          ref: ref-6qss84bx14q
+                                          children:
+                                            - role: generic
+                                              ref: ref-6ope208r869
+                                              children:
+                                                - role: generic
+                                                  ref: ref-6qzp0w22soq
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-wicjb8c9h1g
+                                                      children:
+                                                        - role: heading
+                                                          name: 简介
+                                                          ref: ref-l4r8ajvsklg
+                                                - role: generic
+                                                  ref: ref-7m5jleccl
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-22iyvhm5ugs
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-ot9n7zs7kcm
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-j8494q7d28
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-l61g15almsp
+                                                                  children:
+                                                                    - role: presentation
+                                                                      ref: ref-fy1akksltlk
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-qnmzlnogbge
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-6gk341m7pg8
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-hrh8xiec5nc
+                                                                    - role: generic
+                                                                      ref: ref-0gsd7anv6sd7
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-6m711gyagnx
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-qa11crsoh7
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-r177mdpdwig
+                                                                        - role: generic
+                                                                          ref: ref-qslmxrvf5yg
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-l8u89r9e18
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-nhwifqyogvh
+                                                                        - role: generic
+                                                                          ref: ref-lb8qtxuiv5
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-mxzpow2rbqf
+                                                                        - role: generic
+                                                                          ref: ref-c6z8y0jxde
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-y1mwjww8h0f
+                                                                        - role: generic
+                                                                          ref: ref-odrjgmdf6hl
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-tx7kwcckdb
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-gwx42rn4wcr
+                                                                        - role: generic
+                                                                          ref: ref-veanoch0j87
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-a3dgbuqesl
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-r7qpsb782
+                                                                        - role: generic
+                                                                          ref: ref-elapth3hcmk
+                                                                          children:
+                                                                            - role: presentation
+                                                                              ref: ref-v0bmgfzcubg
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-wt1q8h8jye
+                                                - role: generic
+                                                  ref: ref-6fjua81qifx
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-m603bzbu46a
+                                                      children:
+                                                        - role: button
+                                                          name: 反馈
+                                                          ref: ref-zz87c0gpg4
+                        - role: generic
+                          ref: ref-b2mmpzfezhi
+                          children:
+                            - role: generic
+                              ref: ref-rowlaogr988
+                              children:
+                                - role: generic
+                                  ref: ref-7s4dt59377y
+                                  children:
+                                    - role: generic
+                                      ref: ref-6vl0uppgecx
+                                      children:
+                                        - role: generic
+                                          ref: ref-zvfvqaoygg9
+                                          children:
+                                            - role: generic
+                                              ref: ref-1pdy31twh3hi
+                                              children:
+                                                - role: generic
+                                                  ref: ref-w6df8ts7apa
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-1y2lt0c4g2y
+                                                      children:
+                                                        - role: heading
+                                                          name: 资料
+                                                          ref: ref-mcqal9wnmfg
+                                                - role: generic
+                                                  ref: ref-14qrh69j769
+                                                  children:
+                                                    - role: presentation
+                                                      ref: ref-t2j5ex3fo1
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-97788cc03i
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-w0ql2pji9nd
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-d65laahe29e
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-ajpd0l5bdo
+                                                                      children:
+                                                                        - role: link
+                                                                          name: X (Twitter)
+                                                                          ref: ref-1mo5zfoympp
+                                                            - role: generic
+                                                              ref: ref-robb8shqlv
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-zcv1titelph
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-bsn06w779l
+                                                                      children:
+                                                                        - role: link
+                                                                          name: Facebook
+                                                                          ref: ref-gjxagb06hg9
+                        - role: generic
+                          ref: ref-lnhw5uv7wf
+                          children:
+                            - role: generic
+                              ref: ref-ddje0o9tavk
+                              children:
+                                - role: generic
+                                  ref: ref-u35ihnuppb
+                                  children:
+                                    - role: generic
+                                      ref: ref-eaxd9qa6pig
+                                      children:
+                                        - role: heading
+                                          name: 用户还搜索了
+                                          ref: ref-btb7gugvl9m
+                                    - role: generic
+                                      ref: ref-2iq1fruq7eh
+                                      children:
+                                        - role: generic
+                                          ref: ref-pi1z4uvm99f
+                                          children:
+                                            - role: generic
+                                              ref: ref-dcsj6m343g
+                                              children:
+                                                - role: generic
+                                                  ref: ref-n6g1705gbh
+                                                  children:
+                                                    - role: generic
+                                                      ref: ref-nu5dna6ny
+                                                      children:
+                                                        - role: list
+                                                          ref: ref-kgvd10c98sj
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-owswsffgfhn
+                                                              children:
+                                                                - role: listitem
+                                                                  ref: ref-x8x6j8mckg
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-f8viy1jbux8
+                                                                      children:
+                                                                        - role: link
+                                                                          ref: ref-8o8rka3x83d
+                                                                        - role: generic
+                                                                          ref: ref-ivdp8l8jbni
+                                                            - role: generic
+                                                              ref: ref-io29f7zcteh
+                                                              children:
+                                                                - role: listitem
+                                                                  ref: ref-0golzktkhwo
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-6dwi6t4b86
+                                                                      children:
+                                                                        - role: link
+                                                                          ref: ref-y8sjs551o4d
+                                                                        - role: generic
+                                                                          ref: ref-gpypn0qp2dm
+                                                            - role: generic
+                                                              ref: ref-c8l9se10sie
+                                                              children:
+                                                                - role: listitem
+                                                                  ref: ref-eigvd1xz94j
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-h3br3ip0w5t
+                                                                      children:
+                                                                        - role: link
+                                                                          ref: ref-ie78haco6c8
+                                                                        - role: generic
+                                                                          ref: ref-xahha1pi5ss
+                                                            - role: generic
+                                                              ref: ref-5umtvlmfhc4
+                                                              children:
+                                                                - role: listitem
+                                                                  ref: ref-74gx4tr197o
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-gtbjarg9e5
+                                                                      children:
+                                                                        - role: link
+                                                                          ref: ref-r1x3pk69v7i
+                                                                        - role: generic
+                                                                          ref: ref-4ihamcpla1
+                                                        - role: generic
+                                                          ref: ref-fiiqbdlwiqq
+                                                          children:
+                                                            - role: link
+                                                              name: 查看更多
+                                                              ref: ref-bl1bezfltn6
+            - role: generic
+              ref: ref-8gpbe5to6sx
+              children:
+                - role: button
+                  name: 关闭
+                  ref: ref-b1opxoivexm
+            - role: contentinfo
+              ref: ref-jiwi1ozv3b
+              children:
+                - role: heading
+                  name: 页脚链接
+                  ref: ref-t75nbchwlms
+                - role: generic
+                  ref: ref-o6koj2mvmlc
+                  children:
+                    - role: generic
+                      ref: ref-ol4qs3h59kr
+                      children:
+                        - role: generic
+                          ref: ref-dlradeumctn
+                          children:
+                            - role: generic
+                              ref: ref-3dunoj8hmkq
+                              children:
+                                - role: generic
+                                  ref: ref-o71b6ngketr
+                                  children:
+                                    - role: generic
+                                      ref: ref-l7uxdqvyzed
+                                      children:
+                                        - role: generic
+                                          ref: ref-yoqivg6uf2
+                                          children:
+                                            - role: generic
+                                              ref: ref-fyb1ozkbht
+                                              children:
+                                                - role: generic
+                                                  ref: ref-gy3olpz8lpd
+                                                  children:
+                                                    - role: button
+                                                      name: 嘉兴市 中国浙江省 - 是根据您的 IP 地址推断出来的
+                                                      ref: ref-ovz70ql7rko
+                                                    - role: generic
+                                                      ref: ref-pzilcxbwcq
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-st6kmsd8ypq
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-f9re0qawjxr
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-86janh9b38
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-j6ksesfk4dh
+                                                                      children:
+                                                                        - role: dialog
+                                                                          ref: ref-3wmnozxxpiw
+                                                - role: generic
+                                                  ref: ref-61jtjlv567
+                                                  children:
+                                                    - role: button
+                                                      name: 更新位置信息
+                                                      ref: ref-kd2b2ezy6e
+                                                      children:
+                                                        - role: generic
+                                                          ref: ref-7qw7s1dwksr
+                                                          children:
+                                                            - role: generic
+                                                              ref: ref-pw49xgdelk
+                                                              children:
+                                                                - role: generic
+                                                                  ref: ref-ckgdj7k55t
+                                                                  children:
+                                                                    - role: generic
+                                                                      ref: ref-m3jn62u9gxd
+                                                                      children:
+                                                                        - role: generic
+                                                                          ref: ref-z6gq2qd5vh
+                                                                          children:
+                                                                            - role: generic
+                                                                              ref: ref-dl8qcg23ub
+                                                                              children:
+                                                                                - role: generic
+                                                                                  ref: ref-f4jqyxrbfag
+                                - role: generic
+                                  ref: ref-uky4g8l4ats
+                                  children:
+                                    - role: generic
+                                      ref: ref-tcv2q1v6b6
+                                      children:
+                                        - role: generic
+                                          ref: ref-9w9tfpinexh
+                                          children:
+                                            - role: link
+                                              name: 帮助
+                                              ref: ref-ljkzwk0asld
+                                            - role: link
+                                              name: 发送反馈
+                                              ref: ref-o2r6untkab7
+                                            - role: link
+                                              name: 隐私权
+                                              ref: ref-i8o4tb3qscr
+                                            - role: link
+                                              name: 条款
+                                              ref: ref-582kbke3qyg
