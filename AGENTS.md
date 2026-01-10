@@ -224,6 +224,47 @@ List all reference identifiers
 uvx --from . snapshot-query snapshot.log all-refs
 ```
 
+### convert-to-markdown
+Convert snapshot log file to Markdown format
+
+```bash
+# Convert and output to console
+uvx --from . snapshot-query snapshot.log convert-to-markdown
+
+# Convert and save to file
+uvx --from . snapshot-query snapshot.log convert-to-markdown output.md
+
+# Convert without ref identifiers
+uvx --from . snapshot-query snapshot.log convert-to-markdown output.md --no-ref
+
+# Convert with maximum depth limit
+uvx --from . snapshot-query snapshot.log convert-to-markdown output.md --max-depth 3
+```
+
+**Options:**
+- `output_file` (optional): Output file path. If not provided, outputs to console
+- `--no-ref`: Exclude ref identifiers from output
+- `--max-depth <number>`: Limit rendering depth (useful for large snapshots)
+
+**Output Format:**
+The generated Markdown document includes:
+
+- **Document Header**: Source file name and generation timestamp
+- **Overview Section**: Brief introduction and total element count
+- **Statistics Section**: 
+  - Element count by role in a table format with percentages
+  - Interactive elements summary
+- **Accessibility Tree Structure**: 
+  - Hierarchical tree view with proper headings
+  - Each element shows: role, name (if available), and reference identifier
+  - Child elements count for each parent
+- **Interactive Elements Reference**: 
+  - Tables listing all interactive elements (links, buttons, textboxes, etc.)
+  - Each table shows name and reference identifier for quick lookup
+- **Notes Section**: Additional information about the document and usage
+
+The document is structured as a coherent, readable Markdown file suitable for documentation, sharing, or further processing.
+
 ## Common Query Scenarios
 
 ### Scenario 1: Find button ref

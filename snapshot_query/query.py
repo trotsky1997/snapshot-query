@@ -702,3 +702,314 @@ class SnapshotQuery:
             print(f"{prefix}name: {name}")
         if has_children:
             print(f"{prefix}children: {children_count} items")
+    
+    def to_markdown(self, output_file: Optional[str] = None, include_ref: bool = True, max_depth: Optional[int] = None) -> str:
+        """
+        Convert snapshot data to Markdown format (coherent document)
+        
+        Args:
+            output_file: Optional output file path. If provided, saves to file.
+            include_ref: Whether to include ref identifiers in output
+            max_depth: Maximum depth to render (None = no limit)
+        
+        Returns:
+            Markdown string representation of the snapshot as a coherent document
+        """
+        from datetime import datetime
+        
+        lines = []
+        
+        # Document header
+        lines.append("# Accessibility Snapshot Documentation")
+        lines.append("")
+        lines.append(f"**Source File:** `{self.file_path.name}`")
+        lines.append("")
+        lines.append(f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+        
+        # Document introduction
+        lines.append("## Overview")
+        lines.append("")
+        stats = self.count_elements()
+        total = sum(stats.values())
+        lines.append(f"This document contains the accessibility tree structure from the snapshot file. ")
+        lines.append(f"The snapshot contains **{total}** accessibility elements organized in a hierarchical tree structure.")
+        lines.append("")
+        
+        # Statistics section
+        lines.append("## Statistics")
+        lines.append("")
+        lines.append("### Element Count by Role")
+        lines.append("")
+        lines.append("| Role | Count | Percentage |")
+        lines.append("|------|-------|------------|")
+        for role, count in sorted(stats.items(), key=lambda x: x[1], reverse=True):
+            percentage = (count / total * 100) if total > 0 else 0
+            lines.append(f"| `{role}` | {count} | {percentage:.1f}% |")
+        lines.append("")
+        lines.append(f"**Total Elements:** {total}")
+        lines.append("")
+        
+        # Interactive elements summary
+        interactive = self.find_interactive_elements()
+        interactive_total = sum(len(items) for items in interactive.values())
+        if interactive_total > 0:
+            lines.append("### Interactive Elements")
+            lines.append("")
+            lines.append(f"The snapshot contains **{interactive_total}** interactive elements:")
+            lines.append("")
+            for role, items in sorted(interactive.items(), key=lambda x: len(x[1]), reverse=True):
+                if items:
+                    lines.append(f"- **{role}**: {len(items)} elements")
+            lines.append("")
+        
+        lines.append("---")
+        lines.append("")
+        
+        # Accessibility tree section - collect all elements with names
+        lines.append("## Accessibility Tree Structure")
+        lines.append("")
+        lines.append("The following section lists all elements with names from the accessibility tree. ")
+        lines.append("Links are formatted using Markdown link syntax.")
+        lines.append("")
+        
+        # Helper function to extract name from element (including from children)
+        def get_element_display_name(elem: SnapshotElement) -> Optional[str]:
+            """Get display name from element or its children"""
+            if elem.name:
+                return elem.name
+            
+            # For listitem and tab, try to get name from first child link or button
+            if elem.role in ('listitem', 'tab') and elem.children:
+                for child in elem.children:
+                    if child.name and child.role in ('link', 'button', 'heading'):
+                        return child.name
+                    # Recursively check nested children
+                    if child.children:
+                        for nested in child.children:
+                            if nested.name and nested.role in ('link', 'button', 'heading'):
+                                return nested.name
+            
+            return None
+        
+        # Helper function to get link info from listitem/tab
+        def get_link_from_element(elem: SnapshotElement) -> Tuple[Optional[str], Optional[str]]:
+            """Get link ref and name from element or its children"""
+            if elem.role in ('listitem', 'tab') and elem.children:
+                for child in elem.children:
+                    if child.role == 'link' and child.name:
+                        return (child.ref, child.name)
+                    # Recursively check nested children
+                    if child.children:
+                        for nested in child.children:
+                            if nested.role == 'link' and nested.name:
+                                return (nested.ref, nested.name)
+            return (None, None)
+        
+        # Collect all elements with names (including listitem/tab that get names from children)
+        elements_with_names = []
+        # Track listitem/tab children to skip them (avoid duplicate rendering)
+        listitem_tab_refs = set()
+        
+        def collect_elements_with_names(element: SnapshotElement, depth: int = 0, parent_is_listitem_tab: bool = False):
+            """Recursively collect all elements that have names or can derive names"""
+            if max_depth is not None and depth > max_depth:
+                return
+            
+            # For listitem and tab, check if they have name or can get name from children
+            if element.role in ('listitem', 'tab'):
+                display_name = get_element_display_name(element)
+                if display_name:
+                    elements_with_names.append((element, depth))
+                    # Mark all children of this listitem/tab to skip them
+                    if element.children:
+                        for child in element.children:
+                            listitem_tab_refs.add(child.ref)
+                            # Also mark nested children
+                            if child.children:
+                                for nested in child.children:
+                                    listitem_tab_refs.add(nested.ref)
+                # Don't process children for listitem/tab to avoid duplicates
+                return
+            
+            # For list elements, only collect if they have their own name
+            if element.role == 'list':
+                if element.name:
+                    elements_with_names.append((element, depth))
+                # Process children to collect listitems
+                if element.children and (max_depth is None or depth < max_depth):
+                    for child in element.children:
+                        collect_elements_with_names(child, depth + 1, parent_is_listitem_tab)
+                return
+            
+            # Skip elements that are children of listitem/tab (to avoid duplicates)
+            if element.ref in listitem_tab_refs:
+                # Still process children in case they are not duplicates
+                if element.children and (max_depth is None or depth < max_depth):
+                    for child in element.children:
+                        collect_elements_with_names(child, depth + 1, parent_is_listitem_tab)
+                return
+            
+            # For other elements, collect if they have names
+            if element.name:
+                elements_with_names.append((element, depth))
+            
+            # Recursively process children
+            if element.children and (max_depth is None or depth < max_depth):
+                for child in element.children:
+                    collect_elements_with_names(child, depth + 1, parent_is_listitem_tab)
+        
+        # Collect all elements with names from the tree
+        for element in self.data:
+            collect_elements_with_names(element, 0, False)
+        
+        # Render elements with names
+        if elements_with_names:
+            for element, depth in elements_with_names:
+                # Skip elements that are children of listitem/tab (already rendered as part of listitem/tab)
+                if element.ref in listitem_tab_refs:
+                    continue
+                
+                if element.role == 'listitem':
+                    # For listitem, check if it contains a link
+                    link_ref, link_name = get_link_from_element(element)
+                    if link_ref and link_name:
+                        # Use Markdown link syntax in list item
+                        lines.append(f"- [{link_name}]({link_ref})")
+                    else:
+                        # Use listitem's own name (or name from children)
+                        display_name = get_element_display_name(element)
+                        if display_name:
+                            if include_ref:
+                                lines.append(f"- {display_name} (`{element.ref}`)")
+                            else:
+                                lines.append(f"- {display_name}")
+                    lines.append("")
+                elif element.role == 'tab':
+                    # For tab, check if it contains a link
+                    link_ref, link_name = get_link_from_element(element)
+                    if link_ref and link_name:
+                        # Use Markdown link syntax in list item
+                        lines.append(f"- [{link_name}]({link_ref})")
+                    else:
+                        # Use tab's own name
+                        display_name = get_element_display_name(element)
+                        if display_name:
+                            if include_ref:
+                                lines.append(f"- {display_name} (`{element.ref}`)")
+                            else:
+                                lines.append(f"- {display_name}")
+                    lines.append("")
+                elif element.role == 'link':
+                    # Use Markdown link syntax for links
+                    if include_ref:
+                        lines.append(f"[{element.name}]({element.ref})")
+                    else:
+                        lines.append(element.name)
+                    lines.append("")
+                elif element.role == 'heading':
+                    # Use heading syntax for headings
+                    heading_level = min(depth + 3, 6)  # Start from ###
+                    lines.append(f"{'#' * heading_level} {element.name}")
+                    lines.append("")
+                elif element.role == 'button':
+                    # Format buttons
+                    if include_ref:
+                        lines.append(f"**{element.name}** `{element.ref}`")
+                    else:
+                        lines.append(f"**{element.name}**")
+                    lines.append("")
+                elif element.role == 'list':
+                    # For list elements, just show the name as text (if any)
+                    # The actual list items will be rendered separately
+                    if include_ref:
+                        lines.append(f"{element.name} (`{element.ref}`)")
+                    else:
+                        lines.append(element.name)
+                    lines.append("")
+                else:
+                    # Format other elements
+                    display_name = get_element_display_name(element) if not element.name else element.name
+                    if display_name:
+                        if include_ref:
+                            lines.append(f"{display_name} (`{element.ref}`)")
+                        else:
+                            lines.append(display_name)
+                        lines.append("")
+        else:
+            lines.append("*No elements with names found in the accessibility tree.*")
+            lines.append("")
+        
+        # Interactive elements reference section
+        if interactive_total > 0:
+            lines.append("")
+            lines.append("---")
+            lines.append("")
+            lines.append("## Interactive Elements Reference")
+            lines.append("")
+            lines.append("This section lists all interactive elements for quick reference. ")
+            lines.append("These elements can be interacted with using browser automation tools.")
+            lines.append("")
+            
+            # Helper function to pluralize role names
+            def pluralize_role(role: str) -> str:
+                """Convert role name to plural form"""
+                # Common roles that need special handling
+                if role.endswith('box'):
+                    return role + 'es'  # textbox -> textboxes, combobox -> comboboxes
+                elif role.endswith('x') or role.endswith('ch') or role.endswith('sh'):
+                    return role + 'es'  # mix -> mixes, batch -> batches, brush -> brushes
+                elif role.endswith('y') and role[-2] not in 'aeiou':
+                    return role[:-1] + 'ies'  # city -> cities (but not day -> days)
+                elif role.endswith('f'):
+                    return role[:-1] + 'ves'  # leaf -> leaves
+                elif role.endswith('fe'):
+                    return role[:-2] + 'ves'  # knife -> knives
+                else:
+                    return role + 's'  # button -> buttons, link -> links
+            
+            for role, items in sorted(interactive.items(), key=lambda x: len(x[1]), reverse=True):
+                if items:
+                    role_plural = pluralize_role(role)
+                    role_display = role_plural.replace('_', ' ').title()
+                    lines.append(f"### {role_display} ({len(items)})")
+                    lines.append("")
+                    lines.append("| Name | Reference |")
+                    lines.append("|------|-----------|")
+                    for item in items[:50]:  # Limit to first 50 to avoid huge tables
+                        name = item.name if item.name else "*No name*"
+                        ref = item.ref if include_ref else "*N/A*"
+                        # Escape pipe characters in table cells
+                        name = name.replace('|', '\\|')
+                        lines.append(f"| {name} | `{ref}` |")
+                    if len(items) > 50:
+                        lines.append(f"| ... {len(items) - 50} more {role_plural.replace('_', ' ')} | |")
+                    lines.append("")
+        
+        # Footer
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+        lines.append("## Notes")
+        lines.append("")
+        lines.append("- This document was automatically generated from an accessibility snapshot.")
+        lines.append("- Reference identifiers (`ref-*`) are unique identifiers for each element.")
+        lines.append("- Interactive elements can be targeted using their reference identifiers in browser automation.")
+        if max_depth is not None:
+            lines.append(f"- Tree depth is limited to {max_depth} levels for readability.")
+        if not include_ref:
+            lines.append("- Reference identifiers are excluded from this document.")
+        lines.append("")
+        
+        markdown_content = "\n".join(lines)
+        
+        # Save to file if specified
+        if output_file:
+            output_path = Path(output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(markdown_content)
+        
+        return markdown_content

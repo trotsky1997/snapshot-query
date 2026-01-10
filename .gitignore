@@ -50,3 +50,9 @@ Thumbs.db
 # Project specific
 *.log
 !example-snapshot.log
+
+# Test outputs
+example-output.md
+test-*-output.md
+test-mcp-output.md
+test-pypi-output.md

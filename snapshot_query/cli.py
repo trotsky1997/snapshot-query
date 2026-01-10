@@ -24,6 +24,7 @@ def main():
         print("  count                     - 统计各类型元素数量")
         print("  path <ref>                - 显示元素在树中的路径")
         print("  all-refs                  - 列出所有引用标识符")
+        print("  convert-to-markdown [输出文件] - 将快照转换为 Markdown 格式")
         sys.exit(1)
     
     file_path = sys.argv[1]
@@ -183,6 +184,32 @@ def main():
                 print(f"  {ref}")
             if len(refs) > 50:
                 print(f"... 还有 {len(refs) - 50} 个引用标识符")
+        
+        elif command == "convert-to-markdown":
+            output_file = sys.argv[3] if len(sys.argv) >= 4 else None
+            include_ref = True
+            max_depth = None
+            
+            # Parse optional arguments
+            i = 4
+            while i < len(sys.argv):
+                arg = sys.argv[i]
+                if arg == "--no-ref":
+                    include_ref = False
+                elif arg == "--max-depth" and i + 1 < len(sys.argv):
+                    try:
+                        max_depth = int(sys.argv[i + 1])
+                        i += 1
+                    except ValueError:
+                        print("警告: --max-depth 参数无效，将忽略", file=sys.stderr)
+                i += 1
+            
+            markdown = query.to_markdown(output_file=output_file, include_ref=include_ref, max_depth=max_depth)
+            
+            if output_file:
+                print(f"已转换为 Markdown 并保存到: {output_file}")
+            else:
+                print(markdown)
         
         else:
             print(f"未知命令: {command}")

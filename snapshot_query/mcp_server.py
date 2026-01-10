@@ -249,6 +249,34 @@ async def list_tools() -> List[Tool]:
                 },
                 "required": ["file_path"]
             }
+        ),
+        Tool(
+            name="convert_to_markdown",
+            description="Convert snapshot log file to Markdown format",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "file_path": {
+                        "type": "string",
+                        "description": "Path to snapshot log file"
+                    },
+                    "output_file": {
+                        "type": "string",
+                        "description": "Optional output file path. If not provided, returns markdown content directly"
+                    },
+                    "include_ref": {
+                        "type": "boolean",
+                        "description": "Whether to include ref identifiers in output, default is true",
+                        "default": True
+                    },
+                    "max_depth": {
+                        "type": "integer",
+                        "description": "Maximum depth to render. If not provided, renders all levels",
+                        "minimum": 1
+                    }
+                },
+                "required": ["file_path"]
+            }
         )
     ]
 
@@ -430,6 +458,22 @@ async def call_tool(name: str, arguments: Dict[str, Any]) -> List[TextContent]:
                 result_text += f"  {ref}\n"
             if len(refs) > 100:
                 result_text += f"... {len(refs) - 100} more reference identifiers\n"
+        
+        elif name == "convert_to_markdown":
+            output_file = arguments.get("output_file")
+            include_ref = arguments.get("include_ref", True)
+            max_depth = arguments.get("max_depth")
+            
+            markdown = query.to_markdown(
+                output_file=output_file,
+                include_ref=include_ref,
+                max_depth=max_depth
+            )
+            
+            if output_file:
+                result_text = f"Converted to Markdown and saved to: {output_file}"
+            else:
+                result_text = markdown
         
         else:
             return [TextContent(type="text", text=f"Unknown tool: {name}")]
