@@ -262,7 +262,7 @@ async def list_tools() -> List[Tool]:
                     },
                     "output_file": {
                         "type": "string",
-                        "description": "Optional output file path. If not provided, returns markdown content directly"
+                        "description": "Optional output file path. If not provided, defaults to same directory as input file with .md extension (e.g., snapshot.log -> snapshot.md). If set to empty string, returns markdown content directly instead of saving to file"
                     },
                     "include_ref": {
                         "type": "boolean",
@@ -470,10 +470,18 @@ async def call_tool(name: str, arguments: Dict[str, Any]) -> List[TextContent]:
                 max_depth=max_depth
             )
             
-            if output_file:
-                result_text = f"Converted to Markdown and saved to: {output_file}"
-            else:
+            # Determine actual output file path (for display)
+            if output_file == "":
+                # Output to console/return directly
                 result_text = markdown
+            else:
+                # File was saved (either specified or default)
+                if output_file:
+                    actual_output = output_file
+                else:
+                    # Default output path
+                    actual_output = str(Path(file_path).with_suffix('.md'))
+                result_text = f"Converted to Markdown and saved to: {actual_output}"
         
         else:
             return [TextContent(type="text", text=f"Unknown tool: {name}")]

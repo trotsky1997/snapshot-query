@@ -3,6 +3,7 @@
 """
 
 import sys
+from pathlib import Path
 from .query import SnapshotQuery
 
 
@@ -24,7 +25,9 @@ def main():
         print("  count                     - 统计各类型元素数量")
         print("  path <ref>                - 显示元素在树中的路径")
         print("  all-refs                  - 列出所有引用标识符")
-        print("  convert-to-markdown [输出文件] - 将快照转换为 Markdown 格式")
+        print("  convert-to-markdown [输出文件] [--console] [--no-ref] [--max-depth N] - 将快照转换为 Markdown 格式")
+        print("    如果不指定输出文件，默认保存到与输入文件同目录，扩展名改为 .md")
+        print("    使用 --console 选项可输出到控制台而不保存文件")
         sys.exit(1)
     
     file_path = sys.argv[1]
@@ -186,12 +189,15 @@ def main():
                 print(f"... 还有 {len(refs) - 50} 个引用标识符")
         
         elif command == "convert-to-markdown":
-            output_file = sys.argv[3] if len(sys.argv) >= 4 else None
+            output_file = None
             include_ref = True
             max_depth = None
+            output_to_console = False
             
-            # Parse optional arguments
-            i = 4
+            # Parse arguments
+            # Format: convert-to-markdown [输出文件] [--no-ref] [--max-depth N] [--console]
+            # If no output file is provided, defaults to same directory as input with .md extension
+            i = 3
             while i < len(sys.argv):
                 arg = sys.argv[i]
                 if arg == "--no-ref":
@@ -202,14 +208,24 @@ def main():
                         i += 1
                     except ValueError:
                         print("警告: --max-depth 参数无效，将忽略", file=sys.stderr)
+                elif arg == "--console":
+                    output_to_console = True
+                    output_file = ""  # Empty string means output to console
+                elif not arg.startswith("--") and output_file is None and not output_to_console:
+                    # First non-option argument is the output file
+                    output_file = arg
                 i += 1
             
             markdown = query.to_markdown(output_file=output_file, include_ref=include_ref, max_depth=max_depth)
             
-            if output_file:
-                print(f"已转换为 Markdown 并保存到: {output_file}")
-            else:
+            # Determine actual output file path (for display)
+            if output_file == "":
+                # Output to console
                 print(markdown)
+            else:
+                # File was saved (either specified or default)
+                actual_output = Path(output_file) if output_file else query.file_path.with_suffix('.md')
+                print(f"已转换为 Markdown 并保存到: {actual_output}")
         
         else:
             print(f"未知命令: {command}")

@@ -708,7 +708,9 @@ class SnapshotQuery:
         Convert snapshot data to Markdown format (coherent document)
         
         Args:
-            output_file: Optional output file path. If provided, saves to file.
+            output_file: Optional output file path. If not provided, defaults to same directory 
+                         as input file with .md extension (e.g., snapshot.log -> snapshot.md).
+                         If set to empty string, output to console instead of file.
             include_ref: Whether to include ref identifiers in output
             max_depth: Maximum depth to render (None = no limit)
         
@@ -1005,9 +1007,22 @@ class SnapshotQuery:
         
         markdown_content = "\n".join(lines)
         
-        # Save to file if specified
-        if output_file:
+        # Determine output file path
+        # If output_file is None, default to same directory as input file with .md extension
+        # If output_file is empty string, output to console (don't save to file)
+        # If output_file is provided, use it
+        if output_file is None:
+            # Default: same directory as input file, change extension to .md
+            output_path = self.file_path.with_suffix('.md')
+        elif output_file == "":
+            # Empty string means output to console, don't save to file
+            output_path = None
+        else:
+            # Explicit output file path provided
             output_path = Path(output_file)
+        
+        # Save to file if output_path is set
+        if output_path:
             output_path.parent.mkdir(parents=True, exist_ok=True)
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(markdown_content)
